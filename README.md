@@ -6,4 +6,5 @@ Copy profiles to ~/.config/dolphin-emu
 
 Config | Usage
 --- | ---
-Wiimote/XB Horizontal.ini | Xbox controller for Horizontal Remote
+Wiimote/XB Horizontal.ini | Xbox controller for WII Horizontal Remote
+GCPad/XB\ default.ini | Xbox controller for Gamecube

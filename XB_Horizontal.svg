@@ -37,23 +37,7 @@
      showguides="true"
      inkscape:guide-bbox="true" />
   <defs
-     id="defs3025">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 250.17999 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 250.17999 : 1"
-       inkscape:persp3d-origin="372.04724 : 166.78666 : 1"
-       id="perspective1161" />
-    <inkscape:path-effect
-       effect="bend_path"
-       id="path-effect3820"
-       is_visible="true"
-       bendpath="M 0,0 1,0"
-       prop_scale="1"
-       scale_y_rel="false"
-       vertical="false" />
-  </defs>
+     id="defs3025" />
   <metadata
      id="metadata3028">
     <rdf:RDF>
@@ -62,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -699,23 +683,7 @@
        id="tspan1163-1-9"
        x="42.059872"
        y="227.14519"
-       style="stroke-width:0.274226">B</tspan></text>
-  <path
-     id="path1504-0"
-     d="m 469.12045,378.35555 184.20877,65.83865 66.90726,0.4516"
-     style="fill:none;stroke:#000080;stroke-width:1.11167px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <text
-     transform="scale(1.0296635,0.9711911)"
-     id="text1165-4-3-9-2-7"
-     y="454.90228"
-     x="676.97351"
-     style="font-style:normal;font-weight:normal;font-size:10.969px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274226"
-     xml:space="preserve"><tspan
-       style="stroke-width:0.274226"
-       y="454.90228"
-       x="676.97351"
-       id="tspan1163-5-5-7-5-7"
-       sodipodi:role="line">A</tspan></text>
+       style="stroke-width:0.274226">A</tspan></text>
   <path
      id="path1087-9-9-7-8-4"
      d="m 720.25578,219.32017 c -143.45811,0.23009 -143.60381,0.23009 -143.60381,0.23009"
@@ -822,4 +790,20 @@
        x="632.07385"
        y="359.19809"
        style="stroke-width:0.274226">Tilt  backward</tspan></text>
+  <path
+     id="path1087-3-9"
+     d="M 206.09699,124.38867 C 38.521626,123.94211 38.351436,123.94211 38.351436,123.94211"
+     style="opacity:1;fill:#000080;stroke:#000080;stroke-width:1.12454px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     transform="scale(1.0296635,0.97119108)"
+     id="text1165-49-6"
+     y="125.02467"
+     x="39.01347"
+     style="font-style:normal;font-weight:normal;font-size:10.969px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274226"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.274226"
+       y="125.02467"
+       x="39.01347"
+       id="tspan1163-0-2"
+       sodipodi:role="line">B</tspan></text>
 </svg>

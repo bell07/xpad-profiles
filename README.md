@@ -1,34 +1,83 @@
-# dolphin-emu-profiles
-Input profiles for Dolphin emulator. Applicable for Xbox compatible controller with Linux evdev driver "xpad".
+# xpad-profiles
+
+Profiles for Xbox compatible controller with Linux evdev driver "xpad". The repo contains collection for misc games and emulators.
 
 ## Installation and Usage
-Copy at least the "Wiimote" and "GCPad" folders to ~/.config/dolphin-emu/Profiles or ~/.dolphin-emu/Config/Profiles
 
-After loading the profile you need to select your Xbox compatible joypad because this setting is not in profile file.
+ - Copy `SETTINGS.env.example` to `SETTINGS.env`. 
+ - Adjust the settings file matching your joypad
+ - run the installation scripts you need
 
-## Base profile
-The Linux evdev driver "xpad" used for Xbox compatible controller send the next codes to the dolphin emulator:
+## Installation scripts
+
+Install Script | Description
+--- | ---
+install-dolphin.sh | Install Wiimote and GCPad profiles for Dolphin emulator
+
+
+# Base profile
+The Linux evdev driver "xpad" used for Xbox compatible controller send the next codes:
 
 ![Xbox base profile](Xbox_Controller.svg)
 
 Derivative work (added labels) of [Jishenaz / CC0](https://commons.wikimedia.org/wiki/File:Xbox_Controller.svg)
 
-## Profile GCPad/XB default.ini
-Default profile for [GameCube Controller](https://commons.wikimedia.org/wiki/File:GameCube_controller.png).
-Should be applicable for all games.
-<details><summary>Show</summary>
+`evtest /dev/input/by-id/usb-*event-joystick`
 
-![XB_GCPad.svg](XB_GCPad.svg)
-
-</details> 
-
-## Profile Wiimote/XB Horizontal.ini
-![Wii Horizontal](WII_Horizontal.png)
-
-This profile is optimized for WII Remote without attachments in horizontal mode.
-
-<details><summary>Show</summary>
-
-![Wii Horizontal](XB_Horizontal.svg)
-
-</details>
+```
+Supported events:
+  Event type 0 (EV_SYN)
+  Event type 1 (EV_KEY)
+    Event code 304 (BTN_SOUTH)
+    Event code 305 (BTN_EAST)
+    Event code 307 (BTN_NORTH)
+    Event code 308 (BTN_WEST)
+    Event code 310 (BTN_TL)
+    Event code 311 (BTN_TR)
+    Event code 314 (BTN_SELECT)
+    Event code 315 (BTN_START)
+    Event code 316 (BTN_MODE)
+    Event code 317 (BTN_THUMBL)
+    Event code 318 (BTN_THUMBR)
+  Event type 3 (EV_ABS)
+    Event code 0 (ABS_X)
+      Value      0
+      Min   -32768
+      Max    32767
+      Fuzz      16
+      Flat     128
+    Event code 1 (ABS_Y)
+      Value      0
+      Min   -32768
+      Max    32767
+      Fuzz      16
+      Flat     128
+    Event code 2 (ABS_Z)
+      Value      0
+      Min        0
+      Max      255
+    Event code 3 (ABS_RX)
+      Value      0
+      Min   -32768
+      Max    32767
+      Fuzz      16
+      Flat     128
+    Event code 4 (ABS_RY)
+      Value      0
+      Min   -32768
+      Max    32767
+      Fuzz      16
+      Flat     128
+    Event code 5 (ABS_RZ)
+      Value      0
+      Min        0
+      Max      255
+    Event code 16 (ABS_HAT0X)
+      Value      0
+      Min       -1
+      Max        1
+    Event code 17 (ABS_HAT0Y)
+      Value      0
+      Min       -1
+      Max        1
+```

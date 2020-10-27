@@ -1,7 +1,7 @@
 #!/bin/sh
 
-PROJ_DIR="$(dirname $0)"
-source "$PROJ_DIR/SETTINGS.env" || exit 1
+PROJ_DIR="$(dirname $0)"/dolphin/
+source "$PROJ_DIR/../SETTINGS.env" || exit 1
 
 function die(){
 	echo "${@}"
@@ -37,3 +37,7 @@ install_profile GCPad "XB default.ini"
 
 cp "$DOLPHIN_PATH"/Profiles/GCPad/"XB default.ini" "$DOLPHIN_PATH"/WiimoteNew.ini
 sed -i 's/\[Profile\]/\[Wiimote1]/g' "$DOLPHIN_PATH"/WiimoteNew.ini
+
+[[ -d "$DOLPHIN_GAMESETTINGS" ]] || die "DOLPHIN_GAMESETTINGS=$DOLPHIN_GAMESETTINGS invalid"
+echo "Install game profiles"
+cp -av "$PROJ_DIR"/GameSettings/*.ini "$DOLPHIN_GAMESETTINGS"

@@ -40,7 +40,7 @@ KEY_MAPPING = {
 	"DPad U": '"hat(0 Up)"',
 	"Start": '"button(7)"',
 	"Z Trig": '"axis(2+)"',
-	"B Button": '"button(3)"',
+	"B Button": '"button(2)"',
 	"A Button": '"button(0)"',
 	"C Button R": '"axis(3+)"',
 	"C Button L": '"axis(3-)"',

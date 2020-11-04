@@ -12,6 +12,7 @@ Profiles for Xbox compatible controller with Linux evdev driver "xpad". The repo
 
 Install Script | Description
 --- | ---
+install-all.sh | Call all scripts bellow if corresponding settings path exists
 install-dolphin.sh | Install Wiimote and GCPad profiles for Dolphin emulator
 install-mupen64plus.py | Install the config for mupen64plus - N64 emulator
 

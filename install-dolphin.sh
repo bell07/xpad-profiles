@@ -11,9 +11,26 @@ function die(){
 function install_profile() {
 	TYPE="$1"
 	INI_FILE="$(basename "$2")"
+	TARGET_FILE="$DOLPHIN_PATH"/Profiles/"$TYPE"/"$INI_FILE"
 	echo "Process $TYPE/$INI_FILE"
-	cp "$PROJ_DIR"/"$TYPE"/"$INI_FILE" "$DOLPHIN_PATH"/Profiles/"$TYPE"/"$INI_FILE"
-	echo "Device = evdev/$XPAD_ID/$XPAD_NAME" >> "$DOLPHIN_PATH"/Profiles/"$TYPE"/"$INI_FILE"
+	cp "$PROJ_DIR"/"$TYPE"/"$INI_FILE" "$TARGET_FILE"
+	echo "Device = evdev/$XPAD_ID/$XPAD_NAME" >> "$TARGET_FILE"
+	if [ -n "$MOUSE_NAME" ]; then
+		sed -i s='%MOUSE%'="evdev/$MOUSE_ID/$MOUSE_NAME"=g "$TARGET_FILE"
+	else
+		# Remove all mouse entries
+		sed -i s=' *| *`%MOUSE%:[^|]*`'=""=g "$TARGET_FILE"
+		sed -i s=' *| *[a-z]*(`%MOUSE%:[^|]*`.*)'=""=g "$TARGET_FILE"
+	fi
+	if [ -n "$TOUCH_NAME" ]; then
+		sed -i s='%TOUCH%'="evdev/$TOUCH_ID/$TOUCH_NAME"=g "$TARGET_FILE"
+		## Disable generic pointer ???
+		#sed -i s=' *| *`XInput2/0/Virtual core pointer:Cursor[^|]*`'=""=g "$TARGET_FILE"
+	else
+		# Remove all touchscreens
+		sed -i s=' *| *`%TOUCH%:[^|]*`'=""=g "$TARGET_FILE"
+		sed -i s=' *| *[a-z]*(`%TOUCH%:[^|]*`.*)'=""=g "$TARGET_FILE"
+	fi
 }
 
 [[ -d "$DOLPHIN_PATH" ]] || die "DOLPHIN_PATH=$DOLPHIN_PATH is not valid path"

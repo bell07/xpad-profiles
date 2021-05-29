@@ -1,8 +1,9 @@
 # xpad-profiles
 
-Profiles for Xbox compatible controller with Linux evdev driver "xpad". The repo contains collection for misc games and emulators.
+Profiles for Xbox compatible controller with Linux evdev driver "xpad". 
+The repo contains collection my configurations collection for misc games and emulators.
 
-## Installation and Usage
+## Installation
 
  - Copy `SETTINGS.env.example` to `SETTINGS.env`. 
  - Adjust the settings file matching your joypad
@@ -16,9 +17,11 @@ install-all.sh | Call all scripts bellow if corresponding settings path exists
 install-dolphin.sh | Install Wiimote and GCPad profiles for Dolphin emulator
 install-mupen64plus.py | Install the config for mupen64plus - N64 emulator
 
+## Usage
+Look into corresponding subfolder. For each configuration file an svg file exists, that show you the buttons assignment.
 
 # Base profile
-The Linux evdev driver "xpad" used for Xbox compatible controller send the next codes:
+The Linux evdev driver "xpad" used for Xbox compatible controller send the next codes. The configurations works only if your controller sends the same data.
 
 ![Xbox base profile](Xbox_Controller.svg)
 

@@ -20,7 +20,7 @@ function install_profile() {
 	else
 		# Remove all mouse entries
 		sed -i s=' *| *`%MOUSE%:[^|]*`'=""=g "$TARGET_FILE"
-		sed -i s=' *| *[a-z]*(`%MOUSE%:[^|]*`.*)'=""=g "$TARGET_FILE"
+		sed -i s=' *| *[a-z]*(`%MOUSE%:[^|]*)'=""=g "$TARGET_FILE"
 	fi
 	if [ -n "$TOUCH_NAME" ]; then
 		sed -i s='%TOUCH%'="evdev/$TOUCH_ID/$TOUCH_NAME"=g "$TARGET_FILE"
@@ -29,7 +29,7 @@ function install_profile() {
 	else
 		# Remove all touchscreens
 		sed -i s=' *| *`%TOUCH%:[^|]*`'=""=g "$TARGET_FILE"
-		sed -i s=' *| *[a-z]*(`%TOUCH%:[^|]*`.*)'=""=g "$TARGET_FILE"
+		sed -i s=' *| *[a-z]*(`%TOUCH%:[^|]*)'=""=g "$TARGET_FILE"
 	fi
 }
 

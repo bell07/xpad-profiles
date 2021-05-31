@@ -118,6 +118,8 @@ If mouse is configured in SETTINGS.env
  - the left mouse button is configured for A-Key
  - the right mouse button is configured for B-Key
 
+For some games the GameSettings ini file is included that enables the right profile for the game.
+
 <details><summary>WII Horizontal</summary>
 
 - SMN - New Super Mario Bros. Wii

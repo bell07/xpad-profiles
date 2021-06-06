@@ -3,6 +3,8 @@
 Profiles for Xbox compatible controller with Linux evdev driver "xpad". 
 The repo contains collection my configurations collection for misc games and emulators.
 
+All xbox controller pictures are derivative work (added labels) of [Jishenaz / CC0](https://commons.wikimedia.org/wiki/File:Xbox_Controller.svg)
+
 ## Installation
 
  - Copy `SETTINGS.env.example` to `SETTINGS.env`. 
@@ -18,14 +20,13 @@ install-dolphin.sh | Install Wiimote and GCPad profiles for Dolphin emulator
 install-mupen64plus.py | Install the config for mupen64plus - N64 emulator
 
 ## Usage
-Look into corresponding subfolder. For each configuration file an svg file exists, that show you the buttons assignment.
+Just play the games ;-)
 
 # Base profile
 The Linux evdev driver "xpad" used for Xbox compatible controller send the next codes. The configurations works only if your controller sends the same data.
+<details><summary>Show base profile configuration</summary>
 
 ![Xbox base profile](Xbox_Controller.svg)
-
-Derivative work (added labels) of [Jishenaz / CC0](https://commons.wikimedia.org/wiki/File:Xbox_Controller.svg)
 
 `evtest /dev/input/by-id/usb-*event-joystick`
 
@@ -86,3 +87,55 @@ Supported events:
       Min       -1
       Max        1
 ```
+
+</details>
+
+# Mupen64plus emulator for Nintendo 64
+
+<details><summary>Nintendo 64</summary>
+
+![Nintendo 64](XB%20mupen64plus.svg)
+ 
+</details>
+
+# Dolphin emulator for Nintendo GameCube
+
+<details><summary>Gamecube</summary>
+
+![Gamecube](dolphin/GCPad/XB%20default.svg)
+ 
+</details>
+
+# Dolphin emulator for Nintendo WII
+In addition to the gamepad the pointer device is configured for WII.
+The XInput2 virtual core pointer cursor is allways enables, so mouse movements are used for pointr.
+
+If touchscreen is configured in SETTINGS.env
+ - the touch is configured for pointer move
+ - the double-tap is configured for A-Key
+
+If mouse is configured in SETTINGS.env
+ - the left mouse button is configured for A-Key
+ - the right mouse button is configured for B-Key
+
+For some games the GameSettings ini file is included that enables the right profile for the game.
+
+<details><summary>WII Horizontal</summary>
+
+- SMN - New Super Mario Bros. Wii
+- MRR - New Super Mario Bros.  Retro edition
+- NSS - New Super Mario Bros. Summer Sun Special
+- R8P - Super Paper Mario
+ 
+![WI Horizontal](dolphin/Wiimote/XB%20Horizontal.svg)
+ 
+</details>
+
+<details><summary>WII with Nunchuk</summary>
+
+- RMG - Super Mario Galaxy
+- SB4 - Super Mario Galaxy 2
+ 
+![WI with Nunchuk](dolphin/Wiimote/XB%20with%20Nunchuk.svg)
+ 
+</details>

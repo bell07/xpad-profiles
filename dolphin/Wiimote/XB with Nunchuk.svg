@@ -722,19 +722,19 @@
        sodipodi:role="line">+</tspan></text>
   <path
      id="path1718"
-     d="M 379.29188,260.11081 381.0266,90.095768 420.7498,90.56155"
-     style="fill:none;stroke:#000080;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+     d="m 379.40389,260.13553 2.20022,191.53731 50.38275,-0.52474"
+     style="fill:none;stroke:#000080;stroke-width:1.19537;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:10.969px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274226"
-     x="374.18536"
-     y="89.057213"
+     x="382.45221"
+     y="480.62119"
      id="text1165-3-1-4"
-     transform="scale(1.0296635,0.97119112)"><tspan
+     transform="scale(1.0296635,0.9711911)"><tspan
        sodipodi:role="line"
        id="tspan1163-1-9-6"
-       x="374.18536"
-       y="89.057213"
+       x="382.45221"
+       y="480.62119"
        style="stroke-width:0.274226">HOME</tspan></text>
   <text
      id="text989"
@@ -821,7 +821,7 @@
        y="385.08771"
        x="644.91486"
        id="tspan1163-5-5-7-9"
-       sodipodi:role="line">IR Control</tspan></text>
+       sodipodi:role="line">IR Pointer</tspan></text>
   <text
      transform="scale(1.0296635,0.97119108)"
      id="text1165-4-3-9-3-5"

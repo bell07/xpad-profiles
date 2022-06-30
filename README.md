@@ -1,3 +1,6 @@
+Archived: xpad-profiles is ported into python in https://github.com/bell07/joypad-profiles
+
+
 # xpad-profiles
 
 Profiles for Xbox compatible controller with Linux evdev driver "xpad". 
